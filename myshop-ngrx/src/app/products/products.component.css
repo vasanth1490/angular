@@ -1,0 +1,44 @@
+.prds-box {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.prds-left-panel {
+  float: left;
+  width: 18%;
+}
+
+.prds-right-panel {
+  border-left: 1px solid #D5D8DC; 
+  float: right;
+  width: 81%;
+  padding-left: 10px;
+}
+
+.prds-right-panel h6 {
+  padding-left: 10px;
+}
+
+.prd-item {
+  width: 45%;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.prd-img {
+  width: 125px;
+  padding: 10px;
+}
+
+.spinner {
+  width: 75px;
+  height: 75px;
+  border-width: 10px;
+}
+
+.msg-box {
+  width: 100%;
+  text-align: center;
+  margin: 50px auto;
+}

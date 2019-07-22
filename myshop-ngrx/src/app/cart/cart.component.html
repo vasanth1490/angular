@@ -1,0 +1,35 @@
+<div *ngIf="cartData.length > 0 && !paymentComplete">
+	<div class="cart-tbl-box">
+		<table class="table table-borderless table-sm">
+			<thead>
+				<tr>
+					<th class="txt-left" scope="col">Products</th>
+					<th scope="col">Quantity</th>
+					<th scope="col">Unit Price(Rs)</th>
+					<th scope="col">Total(Rs)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let cartItem of cartData">
+					<td class="txt-left prd" scope="row">
+            <img [src]="cartItem.product.imgurl">{{cartItem.product.name}}
+          </td>
+					<td>{{cartItem.quantity}}</td>
+					<td>{{cartItem.product.price | number : '2.2'}}</td>
+					<td>{{(cartItem.quantity * cartItem.product.price)  | number : '2.2'}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+  <div class="cart-ttl-box">
+    <span><b>Grand Total</b></span><span class="cart-gttl">{{grandTotal | number : '2.2'}}</span>
+  </div>
+  <div class="action"><button class="btn btn-primary" type="submit" (click)="proceedPayment()">Proceed to pay</button></div>
+</div>
+<div class="alert alert-secondary" role="alert" *ngIf="!cartData.length > 0">
+  No products added to cart.
+</div>
+<div class="alert alert-success" role="alert" *ngIf="paymentComplete">
+  <h4 class="alert-heading">Success!!</h4>
+  <p>We have recived your payment and placed an order. It will be delivered in 1-2 days.</p>
+</div>

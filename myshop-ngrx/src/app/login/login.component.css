@@ -1,0 +1,35 @@
+.login-form {
+  width: 350px;
+  margin: 70px auto;
+  background-color: #F8F9F9;
+  padding: 25px 40px;
+}
+
+label {
+  font-size: 14px;
+}
+
+.btn-login-submit {
+  float: left;
+}
+
+.sign-up-msg {
+  float: left;
+  padding: 8px 0px 0px 10px;
+}
+
+.form-actions {
+  display: inline-block;
+}
+
+.login-title {
+  margin-bottom: 20px;
+}
+
+.error-msg {
+  color: #d60000;
+}
+
+.spinner {
+  margin-left: 10px;
+}

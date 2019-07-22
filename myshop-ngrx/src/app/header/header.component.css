@@ -1,0 +1,7 @@
+a {
+  color: #D50000;
+}
+
+a.active {
+  border-bottom: 4px solid #D50000;
+}

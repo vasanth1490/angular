@@ -1,0 +1,34 @@
+<div class="msg-box" >
+  <!-- <img class="spinner" *ngIf="showLoading" src="https://raw.githubusercontent.com/vasanth1490/static/master/img/spinner.gif"> -->
+  <div class="spinner-border text-info spinner" role="status" *ngIf="showLoading">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <h3 *ngIf="productsByCategories.length === 0 && !showLoading">No Products Available</h3>
+</div>
+<div class="prds-box clearfix" *ngIf="!showLoading && productsByCategories.length > 0">
+	<div class="prds-left-panel">
+		<nav class="nav flex-column">
+			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Categories</a>
+      <a class="nav-link active" href="javascript:void(0);" (click)="filterProducts(-1)">All</a>
+			<a class="nav-link active" href="javascript:void(0);" (click)="filterProducts(cat.id)" *ngFor="let cat of productsByCategories">{{cat.name}}</a>
+		</nav>
+	</div>
+	<div class="prds-right-panel">
+    <div class="clearfix" *ngFor="let cat of filteredProductsByCategories">
+      <h6>{{cat.name | uppercase}}</h6>
+      <div class="card mb-3 prd-item" *ngFor="let product of cat.products" (click)="goToProduct(product.id)">
+				<div class="row no-gutters">
+					<div class="col-md-3">
+						<img [src]="product.imgurl" class="card-img prd-img" >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{product.name}}</h5>
+              <p class="card-text">{{product.price | currency: 'INR'}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+	</div>
+</div>

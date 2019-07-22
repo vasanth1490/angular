@@ -1,0 +1,43 @@
+.cart-tbl-box {
+  width: 80%;
+  margin: 60px auto 10px;
+  border: 1px solid #D5D8DC;
+  border-radius: 5px;
+  padding: 0px 25px;
+}
+
+.cart-tbl-box table{
+  margin: 10px auto;
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.cart-ttl-box {
+    width: 80%;
+    margin: auto;
+    text-align: right;
+    padding-right: 29px;
+}
+
+.cart-gttl {
+  margin-left: 70px;
+}
+
+.prd img{
+  width: 25px;
+  margin-right: 10px;
+}
+
+.alert {
+  width: 40%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.action {
+  text-align: center;
+  margin: 50px;
+}

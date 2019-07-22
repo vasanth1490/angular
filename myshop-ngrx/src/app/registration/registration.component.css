@@ -1,0 +1,28 @@
+.reg-form {
+  width: 380px;
+  margin: 50px auto;
+  background-color: #F8F9F9;
+  padding: 25px 40px;
+}
+
+label {
+  font-size: 14px;
+}
+
+.sign-in-msg {
+  padding: 8px 0px 0px 10px;
+}
+
+.spinner {
+  margin: -8px 10px;
+}
+
+.error-msg {
+  color: #d60000;
+}
+
+.success-msg-box {
+  text-align: center;
+  margin: 40px auto;
+  border: none;
+}

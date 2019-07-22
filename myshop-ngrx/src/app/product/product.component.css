@@ -1,0 +1,68 @@
+.prd-top a {
+  float: right;
+  margin: 15px 0px 0px 0px;
+}
+
+.prd-box {
+  width: 90%;
+    margin: 0px auto;
+}
+
+.prd-main {
+  margin-bottom: 30px;
+}
+
+.prd-img {
+  width: 40%;
+  float: left;
+}
+
+.prd-img img {
+  width: 95%;
+  padding: 20px;
+  border: 1px solid #D5D8DC;
+}
+
+.prd-info {
+  width: 54%;
+  float: right;
+  margin-top: 40px;
+}
+
+.prd-sum {
+  width: 60%;
+  float: left;
+}
+
+.prd-cart {
+  width: 25%;
+  float: right;
+  text-align: center;
+  padding: 10px;
+  background-color: #F8F9F9;
+}
+
+.cart-num {
+  width: 50px;
+  display: inline-block !important;
+  margin: 0px 10px;
+  height: 30px;
+}
+
+.btn-add-cart {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.spinner {
+  width: 75px;
+  height: 75px;
+  border-width: 10px;
+  margin-top: 40px;
+}
+
+.msg-box {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
